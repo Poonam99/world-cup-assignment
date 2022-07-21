@@ -1,0 +1,466 @@
+/* Common Style */
+body {
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cover Start Here */
+.top-level {
+    width: 80%;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 33px 50px 0px;
+    margin-top: 50px;
+
+}
+
+.player img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.title {
+    color: white;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.title h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 0;
+    display: flex;
+}
+
+.title p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.title a {
+    width: 187px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes head {
+    0% {
+        left: -50%;
+        top: 35%;
+    }
+
+    50% {
+        top: 12%;
+        left: 55%;
+        transform: scale(0.75);
+
+    }
+
+    100% {
+        left: -20%;
+        top: -10%;
+        transform: scale(0.9);
+    }
+}
+
+.football {
+    display: none;
+}
+
+.top-level:hover .football {
+    display: flex;
+    position: absolute;
+    animation: head 2s ease-in-out 0s infinite;
+}
+
+.football img {
+    width: 30%;
+}
+
+.fa-angle-right {
+    color: white;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+
+/* Cover End Here */
+
+
+/* Middle Layer Start Here */
+.mid-level {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 150px;
+}
+
+.menu {
+    height: 312px;
+    width: 312px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.menu a {
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.menu a.difmenu {
+    color: white;
+    background-color: red;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin-bottom: 150px;
+
+}
+
+.match {
+    width: 312px;
+    height: 242px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.match img {
+    width: 93.04px;
+    height: 54.42px;
+}
+
+.flag {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.details {
+    text-align: center;
+}
+
+.view-button {
+    display: none;
+}
+
+.view a {
+    width: 187px;
+    height: 56px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Middle Layer End Here */
+
+/* Footer Start Here */
+.low-layer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+
+}
+
+.low-layer h1 {
+    color: #B9B9B9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.horizontal-line {
+    width: 90%;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.extras {
+    color: #B9B9B9;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.extras-name {
+    color: #B9B9B9;
+    text-decoration: none;
+}
+
+.social {
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+    color: palevioletred;
+}
+
+/* Footer End Here */
+
+
+
+/* For Mobile Devices */
+
+@media only screen and (max-width:668px) {
+    .top-level {
+        width: 50%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .player img {
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .title h1 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .title p {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .title a {
+        width: 161px;
+        height: 40px;
+    }
+
+    .mid-level {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        background-color: white;
+    }
+
+    .menu a {
+        border: 1px solid gray;
+    }
+
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 16px;
+    }
+
+    .extras {
+        margin-top: 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .extras-name {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+
+/* For Tablet Devices */
+
+@media only screen and (min-width: 669px) and (max-width:988px) {
+    .top-level {
+        width: 75%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .title {
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .player img {
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .title h1 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .title p {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .mid-level {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: -50px;
+        margin-bottom: 20px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: 5%;
+    }
+
+    .menu a {
+        border: 1px solid gray;
+        width: 95%;
+        justify-content: center;
+    }
+
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .extras {
+        margin-top: 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+
+    .extras-name {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .view-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    .view a {
+        width: 187px;
+        height: 56px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+}
